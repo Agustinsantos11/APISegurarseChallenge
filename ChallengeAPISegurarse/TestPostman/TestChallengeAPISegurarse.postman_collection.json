@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "21cd9193-a767-4f7a-8984-e24a3a20ed9f",
+		"name": "TestChallengeAPISegurarse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16913526"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pereyra\",\r\n  \"dni\": 99999999,\r\n  \"fechaNacimiento\": \"1995-01-23T22:05:47.842Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/Clientes",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Clientes",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Antonio\",\r\n  \"apellido\": \"Da Silva\",\r\n  \"dni\": 88777555,\r\n  \"fechaNacimiento\": \"1970-01-23T22:08:14.783Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/Clientes/2",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Clientes/2",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Clientes/3",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Clientes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByDni",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Clientes/DNI/11444555",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Clientes",
+								"DNI",
+								"11444555"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Poliza",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Polizas",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Polizas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Polizas",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Polizas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Polizas/2",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Polizas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clienteId\": 4,\r\n  \"auto\": \"AB123XX\",\r\n  \"costo\": 10222333.0,\r\n  \"fechaVigencia\": \"2025-03-23T22:12:03.166Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/Polizas/4",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Polizas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Polizas/2",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Polizas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByDni",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}api/Polizas/DNI/88777555",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"Polizas",
+								"DNI",
+								"88777555"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
